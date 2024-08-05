@@ -4,6 +4,7 @@
     --transition-animations: all .2s ease-in-out;
     --box-shadow: 2px 2px 2px 1px green;
     --text-shadow: 1px 1px 2px darkgreen, 0 0 1em green, 0 0 0.2em lightgreen;
+    --top-spacing: 3rem;
 }
 
 body {
@@ -23,6 +24,10 @@ h1 {
     font-size: 5rem;
 }
 
+h2 {
+    font-size: 3rem;
+}
+
 .flex {
     display: flex;
 }
@@ -33,6 +38,10 @@ h1 {
 
 .row {
     flex-direction: row;
+}
+
+.top-spacing {
+    margin-top: var(--top-spacing);
 }
 
 /* nav section start */
