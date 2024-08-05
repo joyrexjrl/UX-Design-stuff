@@ -12,4 +12,18 @@ body {
     width: 100%;
     top: 0;
     z-index: -1;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-h1 {
+    font-size: 6rem;
+    text-shadow: var(--text-shadow);
+}
+
+.information-cards-container {
+    margin: 480px auto 3rem;
+    width: 80%;
+    border: 1px solid #555;
 }

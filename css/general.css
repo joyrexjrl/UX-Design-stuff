@@ -3,6 +3,11 @@
     --hover-color: black;
     --transition-animations: all .2s ease-in-out;
     --box-shadow: 2px 2px 2px 1px green;
+    --text-shadow: 1px 1px 2px darkgreen, 0 0 1em green, 0 0 0.2em lightgreen;
+}
+
+body {
+    height: 100%;
 }
 
 a {
@@ -12,6 +17,10 @@ a {
 
 a:hover {
     color: var(--hover-color);
+}
+
+h1 {
+    font-size: 5rem;
 }
 
 .flex {
@@ -37,14 +46,10 @@ a:hover {
 
 .nav-container {
     width: 200px;
+    color: var(--primary-color);
     background-color: white;
     border: 1px solid var(--primary-color);
     text-align: center;
-    transition: var(--transition-animations);
-}
-
-.nav-container a {
-    color: var(--primary-color);
     transition: var(--transition-animations);
 }
 
@@ -52,10 +57,16 @@ a:hover {
     border: 1px solid var(--hover-color);
     cursor: pointer;
     box-shadow: var(--box-shadow);
-}
-
-.nav-container:hover a {
     color: var(--hover-color);
 }
 
 /* nav section end */
+/* footer section start */
+
+footer {
+    background-color: white;
+    height: 100px;
+    margin-top: auto;
+}
+
+/* footer section start */
