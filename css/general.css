@@ -1,0 +1,61 @@
+:root {
+    --primary-color: darkgreen;
+    --hover-color: black;
+    --transition-animations: all .2s ease-in-out;
+    --box-shadow: 2px 2px 2px 1px green;
+}
+
+a {
+    text-decoration: none;
+    transition: var(--transition-animations);
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+.flex {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+/* nav section start */
+
+.header-nav {
+    width: 80%;
+    margin-inline: auto;
+    gap: .5rem;
+    padding-block: 3rem;
+}
+
+.nav-container {
+    width: 200px;
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    text-align: center;
+    transition: var(--transition-animations);
+}
+
+.nav-container a {
+    color: var(--primary-color);
+    transition: var(--transition-animations);
+}
+
+.nav-container:hover {
+    border: 1px solid var(--hover-color);
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+.nav-container:hover a {
+    color: var(--hover-color);
+}
+
+/* nav section end */
