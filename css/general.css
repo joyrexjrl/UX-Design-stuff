@@ -49,6 +49,7 @@ h2 {
 .header-nav {
     width: 80%;
     margin-inline: auto;
+    justify-content: center;
     gap: .5rem;
     padding-block: 3rem;
 }
