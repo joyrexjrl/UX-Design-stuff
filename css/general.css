@@ -45,6 +45,10 @@ h2 {
     margin-top: var(--top-spacing);
 }
 
+.special-font {
+    font-family: "Caveat", cursive;
+}
+
 /* nav section start */
 
 .header-nav {
