@@ -5,6 +5,7 @@
     --box-shadow: 2px 2px 2px 1px green;
     --text-shadow: 1px 1px 2px darkgreen, 0 0 1em green, 0 0 0.2em lightgreen;
     --top-spacing: 3rem;
+    --container-width: 80%;
 }
 
 body {
@@ -74,7 +75,7 @@ h2 {
 /* footer section start */
 
 footer {
-    background-color: white;
+    background-color: grey;
     height: 100px;
     margin-top: auto;
 }
