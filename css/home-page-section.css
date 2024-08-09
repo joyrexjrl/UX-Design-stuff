@@ -16,13 +16,13 @@
 }
 
 .information-cards-container {
-    margin: 3rem auto;
+    margin-inline: auto;
     width: var(--container-width);
     border: 1px solid #555;    
 }
 
 .card-container {
-    gap: 1rem;
+    gap: var(--small-spacer-gap);
     justify-content: center;
     text-align: center;
 }
@@ -32,7 +32,7 @@
 }
 
 .info-card {
-    width: 275px;
-    height: 400px;
-    border: 1px solid green;
+    max-width: 100%;
+    aspect-ratio: 1.4 / 2;
+    object-fit: cover;
 }

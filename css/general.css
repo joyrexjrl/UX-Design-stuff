@@ -4,7 +4,8 @@
     --transition-animations: all .2s ease-in-out;
     --box-shadow: 2px 2px 2px 1px green;
     --text-shadow: 1px 1px 2px darkgreen, 0 0 1em green, 0 0 0.2em lightgreen;
-    --top-spacing: 3rem;
+    --header-spacing: 3rem;
+    --small-spacer-gap: 1rem;
     --container-width: 80%;
 }
 
@@ -29,6 +30,10 @@ h2 {
     font-size: 3rem;
 }
 
+h3 {
+    font-size: 2rem;
+}
+
 .flex {
     display: flex;
 }
@@ -41,18 +46,34 @@ h2 {
     flex-direction: row;
 }
 
-.top-spacing {
-    margin-top: var(--top-spacing);
+.header-spacing {
+    margin: var(--header-spacing) 0;
 }
 
 .special-font {
     font-family: "Caveat", cursive;
 }
 
+.underline-effect {
+    width: 100%;
+    border-bottom: 2px solid green;
+}
+
+.dark-mode {
+    color-scheme: dark light;
+}
+
 /* nav section start */
 
-.header-nav {
+.header-container {
+    margin-inline: auto;
     width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav {
+    width: 70%;
     margin-inline: auto;
     justify-content: center;
     gap: .5rem;
@@ -70,6 +91,16 @@ h2 {
 
 .nav-container:hover {
     border: 1px solid var(--hover-color);
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    color: var(--hover-color);
+}
+
+.light-dark-mode-button {
+    transition: var(--transition-animations);
+}
+
+.light-dark-mode-button:hover {
     cursor: pointer;
     box-shadow: var(--box-shadow);
     color: var(--hover-color);

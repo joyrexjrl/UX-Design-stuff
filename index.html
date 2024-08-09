@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="webpageBodySelector" class="dark-mode">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,35 +12,92 @@
     <link rel="stylesheet" href="css/resets.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/home-page-section.css">
+    <link rel="stylesheet" href="css/transportation.css">
+
+    <script src="scripts/lightDarkMode.js" defer></script>
 </head>
 <body class="flex col">
-    <header>
-        <nav class="header-nav flex">
+    <header class="header-container flex">
+        <a href=""><img src="images/TanitiLogo.png" width="75px" height="75px" alt="logo"></a>
+        <nav class="header-nav flex">            
             <a class="nav-container" href="">Home</a>
             <a class="nav-container" href="">Transportation</a>
             <a class="nav-container" href="">Entertainment</a>
             <a class="nav-container" href="">Lodging</a>
             <a class="nav-container" href="">FAQ</a>
         </nav>
+        <div>
+            <img id="modeToggleImage" class="light-dark-mode-button" src="images/darkMode.png" width="75px" height="75px" alt="dark mode image" onclick="lightDarkModeChanger()">
+        </div>
     </header>
     <section id="homeSection" class="">
         <section class="hero flex">
             <h1 class="hero-h1 special-font">Taniti</h1>
         </section>
         <section class="information-cards-container">
-            <h2 class="top-spacing special-font">Island Attractions</h2>
+            <h2 class="header-spacing special-font underline-effect">Island Attractions</h2>
             <div class="card-container flex">
-                <a href=""><div class="info-card"></div>Transportation</a>
-                <a href=""><div class="info-card"></div>Entertainment</a>
-                <a href=""><div class="info-card"></div>Lodging</a>
+                <a href=""><img src="images/transportation/transportation air plane.webp" class="info-card" width="275px" height="400px" alt="plane image"></img>Transportation</a>
+                <a href=""><img src="images/entertainment/entertainment beach 1.webp" class="info-card" width="275px" height="400px" alt="beach image"></img>Entertainment</a>
+                <a href=""><img src="images/lodging/lodging beachside hotel 1.webp" class="info-card" width="275px" height="400px" alt="hotel image"></img>Lodging</a>
             </div>
             
+        </section>
+    </section>
+    <section id="transportationSection" class="">
+        <section class="transportation-container">
+            <h2 class="header-spacing special-font underline-effect">Transportation</h2>
+
+            <div class="transportation-content-container flex">
+                <div class="transportation-info-text flex col">
+                    <h3 class="special-font">Cruise Ship</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deleniti doloremque nisi sequi impedit excepturi illo minima tenetur! Quaerat, impedit recusandae. Atque deleniti natus, beatae eos recusandae tempora inventore doloribus?
+                    Aut repellendus at reprehenderit ad doloremque maxime placeat provident beatae architecto officiis vel suscipit, iure sapiente nobis, dolore nesciunt possimus deleniti? Obcaecati id alias, ipsum nesciunt in cum delectus assumenda!</p>
+                </div>
+                <img src="images/transportation/transportation cruise ship.webp" class="transportation_image" width="400px" height="250px" alt="cruise ship">
+            </div>
+            <div class="transportation-content-container flex">
+                <img src="images/transportation/transportation plane 2.webp" class="transportation_image" width="400px" height="250px" alt="air plane">
+                <div class="transportation-info-text flex col">
+                    <h3 class="special-font">By Air</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deleniti doloremque nisi sequi impedit excepturi illo minima tenetur! Quaerat, impedit recusandae. Atque deleniti natus, beatae eos recusandae tempora inventore doloribus?
+                    Aut repellendus at reprehenderit ad doloremque maxime placeat provident beatae architecto officiis vel suscipit, iure sapiente nobis, dolore nesciunt possimus deleniti? Obcaecati id alias, ipsum nesciunt in cum delectus assumenda!</p>
+                </div>                
+            </div>
+
+            <h2 class="header-spacing special-font underline-effect">Island Travel</h2>
+
+            <div class="transportation-content-container flex">
+                <div class="transportation-info-text flex col">
+                    <h3 class="special-font">Local Ship</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deleniti doloremque nisi sequi impedit excepturi illo minima tenetur! Quaerat, impedit recusandae. Atque deleniti natus, beatae eos recusandae tempora inventore doloribus?
+                    Aut repellendus at reprehenderit ad doloremque maxime placeat provident beatae architecto officiis vel suscipit, iure sapiente nobis, dolore nesciunt possimus deleniti? Obcaecati id alias, ipsum nesciunt in cum delectus assumenda!</p>
+                </div>
+                <img src="images/transportation/transportation boat.webp" class="transportation_image" width="400px" height="250px" alt="boat">
+            </div>
+            <div class="transportation-content-container flex">
+                <img src="images/transportation/transportation bus.webp" class="transportation_image" width="400px" height="250px" alt="bus">
+                <div class="transportation-info-text flex col">
+                    <h3 class="special-font">By Bus</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deleniti doloremque nisi sequi impedit excepturi illo minima tenetur! Quaerat, impedit recusandae. Atque deleniti natus, beatae eos recusandae tempora inventore doloribus?
+                    Aut repellendus at reprehenderit ad doloremque maxime placeat provident beatae architecto officiis vel suscipit, iure sapiente nobis, dolore nesciunt possimus deleniti? Obcaecati id alias, ipsum nesciunt in cum delectus assumenda!</p>
+                </div>                
+            </div>
+            <div class="transportation-content-container flex">
+                <div class="transportation-info-text flex col">
+                    <h3 class="special-font">Carrage</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deleniti doloremque nisi sequi impedit excepturi illo minima tenetur! Quaerat, impedit recusandae. Atque deleniti natus, beatae eos recusandae tempora inventore doloribus?
+                    Aut repellendus at reprehenderit ad doloremque maxime placeat provident beatae architecto officiis vel suscipit, iure sapiente nobis, dolore nesciunt possimus deleniti? Obcaecati id alias, ipsum nesciunt in cum delectus assumenda!</p>
+                </div>
+                <img src="images/transportation/transportation taxi.webp" class="transportation_image" width="400px" height="250px" alt="cruise ship">
+            </div>            
+
         </section>
     </section>
     <section id="entertainmentSection" class="">
 
     </section>
-    <section id="transportationSection" class="">
+    <section id="lodgingSection" class="">
 
     </section>
     <section id="aboutSection" class="">
