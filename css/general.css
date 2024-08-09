@@ -54,6 +54,22 @@ h3 {
     display: block;
 }
 
+.container {
+    margin-inline: auto;
+    width: var(--container-width);
+}
+
+.content-container {
+    gap: var(--small-spacer-gap);
+    margin-bottom: 3rem;
+}
+
+.general-content-image {
+    max-width: 100%;
+    aspect-ratio: 2 / 1.4;
+    object-fit: cover;
+}
+
 .header-spacing {
     margin: var(--header-spacing) 0;
 }
@@ -69,6 +85,10 @@ h3 {
 
 .dark-mode {
     color-scheme: dark light;
+}
+
+.info-text-gap {
+    gap: var(--small-spacer-gap);
 }
 
 /* nav section start */

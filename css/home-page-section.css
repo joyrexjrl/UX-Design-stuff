@@ -20,12 +20,6 @@
     text-shadow: 2px 2px 4px purple, 0 0 1em indigo, 0 0 0.2em pink;
 }
 
-.information-cards-container {
-    margin-inline: auto;
-    width: var(--container-width);
-    border: 1px solid #555;    
-}
-
 .card-container {
     gap: var(--small-spacer-gap);
     justify-content: center;
