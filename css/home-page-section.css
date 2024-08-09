@@ -1,5 +1,5 @@
 .hero {
-    background-image: url("../images/island\ test.jpg");
+    /*background-image: url("../images/heroBackgroundLightMode.webp");*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,6 +13,11 @@
 .hero-h1 {
     font-size: 6rem;
     text-shadow: var(--text-shadow);
+}
+
+.hero-dark-mode-h1 {
+    font-size: 6rem;
+    text-shadow: 2px 2px 4px purple, 0 0 1em indigo, 0 0 0.2em pink;
 }
 
 .information-cards-container {
