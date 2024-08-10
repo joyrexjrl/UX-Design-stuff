@@ -66,6 +66,8 @@ h3 {
 
 .general-content-image {
     max-width: 100%;
+    width: 400px;
+    height: 250px;
     aspect-ratio: 2 / 1.4;
     object-fit: cover;
 }
@@ -126,6 +128,7 @@ h3 {
 
 .light-dark-mode-button {
     transition: var(--transition-animations);
+    border-radius: 100px;
 }
 
 .light-dark-mode-button:hover {
