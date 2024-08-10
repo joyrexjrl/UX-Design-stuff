@@ -13,7 +13,7 @@ function lightDarkModeChanger(){
         lightModeH1.classList.add("show");
         lightModeH1.classList.remove("hide");
         modeToggleImage.src = "images/lightMode.png";
-        heroElement.style.backgroundImage = "url('/images/heroBackgroundLightMode.webp')"
+        heroElement.style.backgroundImage = "url('images/heroBackgroundLightMode.webp')"
     } else {
         // If light mode is active, switch to dark mode
         bodyElement.classList.add("dark-mode");
@@ -22,16 +22,16 @@ function lightDarkModeChanger(){
         lightModeH1.classList.remove("show");
         lightModeH1.classList.add("hide");
         modeToggleImage.src = "images/darkMode.png";
-        heroElement.style.backgroundImage = "url('/images/heroBackgroundDarkMode.webp')"
+        heroElement.style.backgroundImage = "url('images/heroBackgroundDarkMode.webp')"
     }
 }
 
 window.onload = function() {
     if (bodyElement.classList.contains("dark-mode")) {
-        heroElement.style.backgroundImage = "url('/images/heroBackgroundDarkMode.webp')";
+        heroElement.style.backgroundImage = "url('images/heroBackgroundDarkMode.webp')";
         modeToggleImage.src = "images/darkMode.png";
     } else {
-        heroElement.style.backgroundImage = "url('/images/heroBackgroundLightMode.webp')";
+        heroElement.style.backgroundImage = "url('images/heroBackgroundLightMode.webp')";
         modeToggleImage.src = "images/lightMode.png";
     }
 }
