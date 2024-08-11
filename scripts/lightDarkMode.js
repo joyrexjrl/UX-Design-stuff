@@ -3,6 +3,7 @@ const modeToggleImage = document.getElementById('modeToggleImage');
 const lightModeH1 = document.getElementById('lightModeH1');
 const darkModeH1 = document.getElementById('darkModeH1');
 const heroElement = document.getElementById('heroElement');
+const blueOysterNightOnly = document.getElementById('blueOysterNightOnly');
 
 function lightDarkModeChanger(){
     if (bodyElement.classList.contains("dark-mode")) {
@@ -12,6 +13,8 @@ function lightDarkModeChanger(){
         darkModeH1.classList.add("hide");
         lightModeH1.classList.add("show");
         lightModeH1.classList.remove("hide");
+        blueOysterNightOnly.classList.add("hide");
+        blueOysterNightOnly.classList.remove("show-flex");
         modeToggleImage.src = "images/lightMode.png";
         heroElement.style.backgroundImage = "url(images/heroBackgroundLightMode.webp)"
     } else {
@@ -21,6 +24,8 @@ function lightDarkModeChanger(){
         darkModeH1.classList.remove("hide");
         lightModeH1.classList.remove("show");
         lightModeH1.classList.add("hide");
+        blueOysterNightOnly.classList.remove("hide");
+        blueOysterNightOnly.classList.add("show-flex");
         modeToggleImage.src = "images/darkMode.png";
         heroElement.style.backgroundImage = "url(images/heroBackgroundDarkMode.webp)"
     }

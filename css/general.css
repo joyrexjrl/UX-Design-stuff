@@ -34,7 +34,8 @@ h3 {
     font-size: 2rem;
 }
 
-.flex {
+.flex,
+.show-flex {
     display: flex;
 }
 
