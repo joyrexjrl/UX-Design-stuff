@@ -112,7 +112,8 @@ h3 {
     padding-block: 3rem;
 }
 
-.nav-container {
+.nav-container,
+.nav-container-entertainment {
     width: 200px;
     color: var(--primary-color);
     background-color: white;
@@ -121,7 +122,12 @@ h3 {
     transition: var(--transition-animations);
 }
 
-.nav-container:hover {
+.nav-container-entertainment {
+    width: 113px;    
+}
+
+.nav-container:hover,
+.nav-container-entertainment:hover {
     border: 1px solid var(--hover-color);
     cursor: pointer;
     box-shadow: var(--box-shadow);
@@ -137,6 +143,11 @@ h3 {
     cursor: pointer;
     box-shadow: var(--box-shadow);
     color: var(--hover-color);
+}
+
+.entertainment-nav {
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* nav section end */
