@@ -14,16 +14,17 @@
     <link rel="stylesheet" href="css/home-page-section.css">
 
     <script src="scripts/lightDarkMode.js" defer></script>
+    <script src="scripts/navBar.js" defer></script>
 </head>
 <body class="flex col">
     <header class="header-container flex">
         <a href=""><img src="images/TanitiLogo.png" width="75px" height="75px" alt="logo"></a>
         <nav class="header-nav flex">            
-            <a class="nav-container" href="">Home</a>
-            <a class="nav-container" href="">Transportation</a>
-            <a class="nav-container" href="">Entertainment</a>
-            <a class="nav-container" href="">Lodging</a>
-            <a class="nav-container" href="">FAQ</a>
+            <a class="nav-container" href="#" onclick="navBarFuncationality(0)">Home</a>
+            <a class="nav-container" href="#" onclick="navBarFuncationality(1)">Transportation</a>
+            <a class="nav-container" href="#" onclick="navBarFuncationality(2)">Entertainment</a>
+            <a class="nav-container" href="#" onclick="navBarFuncationality(3)">Lodging</a>
+            <a class="nav-container" href="#" onclick="navBarFuncationality(4)">FAQ</a>
         </nav>
         <div>
             <img id="modeToggleImage" class="light-dark-mode-button" src="images/lightMode.png" width="75px" height="75px" alt="dark mode image" onclick="lightDarkModeChanger()">
@@ -46,7 +47,7 @@
         </section>
     </section>
 
-    <section id="transportationSection" class="">
+    <section id="transportationSection" class="hide">
         <section class="container">
             <h2 class="header-spacing special-font underline-effect">Transportation</h2>
 
@@ -97,7 +98,7 @@
         </section>
     </section>
 
-    <section id="entertainmentSection" class="">
+    <section id="entertainmentSection" class="hide">
         <section class="container">
             <h2 class="header-spacing special-font underline-effect">Entertainment</h2>
 
@@ -289,20 +290,30 @@
         </section>
     </section>
 
-    <section id="lodgingSection" class="">
+    <section id="lodgingSection" class="hide">
         <section class="container">
             <h2 class="header-spacing special-font underline-effect">Lodging</h2>
         </section>
     </section>
 
-    <section id="aboutSection" class="">
+    <section id="aboutSection" class="hide">
         <section class="container">
             <h2 class="header-spacing special-font underline-effect">About/ FAQ</h2>
         </section>
     </section>
     
     <footer>
-
+        <section class="footer-container flex">
+            <a href=""><img src="images/TanitiLogo.png" width="75px" height="75px" alt="logo"></a>
+            <nav class="header-nav flex">            
+                <a class="nav-container" href="#" onclick="navBarFuncationality(0)">Home</a>
+                <a class="nav-container" href="#" onclick="navBarFuncationality(1)">Transportation</a>
+                <a class="nav-container" href="#" onclick="navBarFuncationality(2)">Entertainment</a>
+                <a class="nav-container" href="#" onclick="navBarFuncationality(3)">Lodging</a>
+                <a class="nav-container" href="#" onclick="navBarFuncationality(4)">FAQ</a>
+            </nav>
+        </section>
+        
     </footer>    
 </body>
 </html>
