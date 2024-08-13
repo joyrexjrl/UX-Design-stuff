@@ -99,8 +99,6 @@ h3,
     gap: var(--small-spacer-gap);
 }
 
-/* nav section start */
-
 .header-container,
 .footer-container {
     margin-inline: auto;
@@ -155,16 +153,19 @@ h3,
     align-items: center;
 }
 
-.faq-container {
+.faq-container,
+.about-text-container {
     gap: var(--small-spacer-gap);
 }
-
-/* nav section end */
-/* footer section start */
 
 footer {
     height: 100px;
     margin-top: auto;
 }
 
-/* footer section start */
+.taniti-flag {
+    width: 400px;
+    height: 250px;
+    border: 1px solid black;
+    background-color: white;
+}
