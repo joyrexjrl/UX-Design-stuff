@@ -34,4 +34,11 @@
     max-width: 100%;
     aspect-ratio: 1.4 / 2;
     object-fit: cover;
+    transition: var(--transition-animations);
+}
+
+.info-card:hover {
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    color: var(--hover-color);
 }

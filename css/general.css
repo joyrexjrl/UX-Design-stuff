@@ -30,7 +30,8 @@ h2 {
     font-size: 3rem;
 }
 
-h3 {
+h3,
+.card-font-size {
     font-size: 2rem;
 }
 
@@ -53,6 +54,10 @@ h3 {
 
 .show {
     display: block;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .container {
@@ -148,6 +153,10 @@ h3 {
 .entertainment-nav {
     justify-content: space-between;
     align-items: center;
+}
+
+.faq-container {
+    gap: var(--small-spacer-gap);
 }
 
 /* nav section end */
